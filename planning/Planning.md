@@ -9,24 +9,28 @@ Create a game of rock paper scissors where a user plays against a computer.
 - The game is structured in a 'best 2 out of 3' format
 
 ### Coding challenge:
-[-] Lvl 1: Create a basic game
-[-] Lvl 2: Create a UI for the game
-[-] Lvl 3: Implement tensorflow object detection motion tracking
-[-] Lvl 4: Implement stretch
+- [-] Lvl 1: Create a basic game
+- [-] Lvl 2: Create a UI for the game
+- [-] Lvl 3: Implement tensorflow object detection motion tracking
+- [-] Lvl 4: Implement stretch
 
 ### Stretch:
-[-] Zen mode - infinite rounds
-[-] Countdown & random variations in computer 'shoot' time
-[-] Database to record wins and losses per user
-[-] User accounts
-[-] User vs User option, as opposed to User vs Computer
+- [-] Zen mode - infinite rounds
+- [-] Countdown & random variations in computer 'shoot' time
+- [-] Database to record wins and losses per user
+- [-] User accounts
+- [-] User vs User option, as opposed to User vs Computer
 
 ### Page structure:
-[-] Header
-[-] Cumulative points -> player vs computer
-[-] Moves remaining
-[-] Who won the current round 
-[-] Each player's status (win, loss, tie)
-[-] Buttons for commands
-[-] Game over/ round number
-[-] Footer
+- [X] Header
+- [X] Cumulative points -> player vs computer
+- [X] Moves remaining
+- [X] Who won the current round 
+- [X] Each player's status (win, loss, tie)
+- [X] Buttons for commands
+- [X] Game over
+- [-] Round number
+- [x] Footer
+
+### References:
+- https://www.geeksforgeeks.org/rock-paper-and-scissor-game-using-javascript/
