@@ -15,7 +15,18 @@ Create a game of rock paper scissors where a user plays against a computer.
 [-] Lvl 4: Implement stretch
 
 ### Stretch:
-[-] Zen mode
+[-] Zen mode - infinite rounds
+[-] Countdown & random variations in computer 'shoot' time
 [-] Database to record wins and losses per user
 [-] User accounts
 [-] User vs User option, as opposed to User vs Computer
+
+### Page structure:
+[-] Header
+[-] Cumulative points -> player vs computer
+[-] Moves remaining
+[-] Who won the current round 
+[-] Each player's status (win, loss, tie)
+[-] Buttons for commands
+[-] Game over/ round number
+[-] Footer
