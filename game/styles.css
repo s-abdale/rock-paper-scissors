@@ -21,14 +21,15 @@ body{
 
 /* ---------Header-------------- */
 header{
-  background-color: whitesmoke;
+  background-color: #FFFFFF;
   display: flex;
   justify-content: center;
   border-top-left-radius: 0.8rem;
   border-top-right-radius: 0.8rem;
+  border-bottom: 3px solid black;
 }
 .header-title{
-  background-color: lightgrey;
+  background-color: whitesmoke;
   padding: 0.5rem;
   margin: 0.5rem;
   width: 35rem;
@@ -59,7 +60,7 @@ header{
   border-radius: 50%;
 }
 .header-buttons-maximize-refresh{
-  height: 1rem;
+  height: 1.1rem;
   width: fit-content;
   padding: 0.2rem;
   background-color: #2BC016;
@@ -120,7 +121,6 @@ footer{
 }
 
 .game-buttons-block{
-  border: 1px solid darkgrey;
   width: 50vw;
   padding: 1rem;
   display: flex;
@@ -129,16 +129,55 @@ footer{
 }
 
 .game-button{
-  background-color: lightsteelblue;
   border: none;
   height: 5rem;
   width: 8rem;
+
+  background-color: #FFFFFF;
+  border: 3px solid black;
+  border-radius: 1rem;
+  box-shadow: 0.3rem 0.3rem;
+
+  cursor: pointer;
+}
+
+.game-button:hover{
+  background-color: #2BC016;
+}
+
+.game-button:active{
+  background-color: #2BC016;
+  box-shadow: 0.1rem 0.1rem;
+  transform: translateY(4px);
 }
 
 .game-round-winner{
-  background-color: lightsteelblue;
+  border: none;
+  height: 10rem;
+  width: 10rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url("../docs/yellow_starburst.svg");
+  background-repeat: no-repeat;
+  background-size: 150px 150px;
 }
 
 .game-round-status{
-  background-color: lightsteelblue;
+  height: 5rem;
+  width: 15rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
+
+/* .scroll-container{
+
+}
+.scroll-text{
+  
+} */

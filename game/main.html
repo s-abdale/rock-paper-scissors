@@ -26,11 +26,9 @@
       <section class="player-stats left-player">
         <h3>Player 1</h3>
         
-        <!-- <p>Current round: 5</p> -->
         <p>Total points:
           <span class="span-count count">0</span>
         </p>
-        <p class="movesleft">Moves left: 10</p>
       </section>
       
   
@@ -55,9 +53,16 @@
           </button>
         </div>
   
-        <div class="game-round-status move">
-          Game: ongoing
-        </div>
+        <section class="game-round-status">
+          <!-- note: implement scrolling text loop -->
+          <div class="scroll-container">
+            <div class="move scroll-text"></div>
+          </div>
+
+          <div class="movesleft">
+            Moves left: 10
+          </div>
+        </section>
   
         <button class="reload"></button>
   
@@ -68,11 +73,9 @@
       <section class="player-stats right-player">
         <h3>Player 2</h3>
         <p>[computer]</p>
-        <!-- <p>Current round: 5</p> -->
         <p>Total points:
           <span class="c-count count">0</span>
         </p>
-        <p>Moves left: 5</p>
       </section>
   
     </main>

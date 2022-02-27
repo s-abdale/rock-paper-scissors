@@ -34,6 +34,9 @@ const game = () => {
 
         // 3. check who wins (external function)
         winner(this.innerText,computerChoice);
+
+        // state that game is ongoing
+        document.querySelector('.move').innerText = 'Keep going!';
     
         // 4. call game over after a set # of moves (external function)
         if (moves == 10){
