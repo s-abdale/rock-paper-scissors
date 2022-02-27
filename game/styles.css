@@ -1,19 +1,80 @@
 body{
-  background-color: navy;
+  background-color: #8A4FFF;
   display: flex;
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
+  /* padding: 2rem; */
+  margin: 0px;
 }
+.computer-screen{
+  margin: 2rem;
+  margin-bottom: 4.2rem;
+  border: 3px solid #000300;
+  border-radius: 1rem;
+  box-shadow: 0.5rem 0.5rem;
+}
+
+
+
+
+
+/* ---------Header-------------- */
 header{
   background-color: whitesmoke;
   display: flex;
   justify-content: center;
+  border-top-left-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
 }
+.header-title{
+  background-color: lightgrey;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  width: 35rem;
+  border-radius: 3rem;
+  font-size: x-large;
+}
+.header-buttons{
+  position: absolute;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1.2rem;
+  margin-left: 3rem;
+  min-width: 8rem;
+}
+.header-buttons-close{
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: #FC5130;
+  border-radius: 50%;
+}
+.header-buttons-minimize{
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: #FBAF00;
+  border-radius: 50%;
+}
+.header-buttons-maximize-refresh{
+  height: 1rem;
+  width: fit-content;
+  padding: 0.2rem;
+  background-color: #2BC016;
+  border-radius: 1rem;
+}
+/* ------------------------------ */
+
+
+
+
+
 main{
   display: flex;
   justify-content: space-between;
-  min-height: 89vh;
+  min-height: 80vh;
 }
 footer{
   background-color: whitesmoke;
@@ -22,13 +83,34 @@ footer{
   width: -webkit-fill-available;
 }
 
+
+
+
+
+/* ----------Players------------- */
 .player-stats {
-  background-color: gainsboro;
+  background-color: #FC5130;
   padding: 1rem;
+  width: 10rem;
 }
 
+.left-player{
+  border-bottom-left-radius: 0.8rem;
+  border-right: 3px solid #000300;
+}
+
+.right-player{
+  border-bottom-right-radius: 0.8rem;
+  border-left: 3px solid #000300;
+}
+/* ------------------------------ */
+
+
+
+
+
 .game-stage{
-  background-color: white;
+  background-color: #FF8CC6;
   padding: 1rem;
   width: -webkit-fill-available;
   display: flex;

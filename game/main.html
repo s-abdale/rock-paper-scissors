@@ -8,68 +8,77 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>
-      Rock, paper scissors!
-    </h1>
-  </header>
+  <div class="computer-screen">
 
-  <main>
-    
-    <section class="player-stats">
-      <h3>Player 1</h3>
+    <header>
+      <div class="header-buttons">
+        <div class="header-buttons-close"> </div>
+        <div class="header-buttons-minimize"> </div>
+        <span class="header-buttons-maximize-refresh">refresh</span>
+      </div>
+      <h1 class="header-title">
+        Rock, paper scissors!
+      </h1>
+    </header>
+  
+    <main>
       
-      <!-- <p>Current round: 5</p> -->
-      <p>Total points:
-        <p class="p-count count">0</p>
-      </p>
-      <p class="movesleft">Moves left: 10</p>
-    </section>
+      <section class="player-stats left-player">
+        <h3>Player 1</h3>
+        
+        <!-- <p>Current round: 5</p> -->
+        <p>Total points:
+          <span class="span-count count">0</span>
+        </p>
+        <p class="movesleft">Moves left: 10</p>
+      </section>
+      
+  
+  
+      <section class="game-stage">
+  
+        <div class="game-round-winner">
+          <span class="result"></span>
+        </div>
+  
+        <div class="game-buttons-block options">
+          <button class="game-button rock">
+            Rock
+          </button>
     
-
-
-    <section class="game-stage">
-
-      <div class="game-round-winner">
-        <span class="result"></span>
-      </div>
-
-      <div class="game-buttons-block options">
-        <button class="game-button rock">
-          Rock
-        </button>
-  
-        <button class="game-button paper">
-          Paper
-        </button>
-  
-        <button class="game-button scissors">
-          Scissors
-        </button>
-      </div>
-
-      <div class="game-round-status move">
-        Game: ongoing
-      </div>
-
-      <button class="reload"></button>
-
-    </section>
+          <button class="game-button paper">
+            Paper
+          </button>
     
-
-
-    <section class="player-stats">
-      <h3>Player 2</h3>
-      <p>[computer]</p>
-      <!-- <p>Current round: 5</p> -->
-      <p>Total points:
-        <p class="c-count count">0</p>
-      </p>
-      <p>Moves left: 5</p>
-    </section>
-
-  </main>
+          <button class="game-button scissors">
+            Scissors
+          </button>
+        </div>
   
+        <div class="game-round-status move">
+          Game: ongoing
+        </div>
+  
+        <button class="reload"></button>
+  
+      </section>
+      
+  
+  
+      <section class="player-stats right-player">
+        <h3>Player 2</h3>
+        <p>[computer]</p>
+        <!-- <p>Current round: 5</p> -->
+        <p>Total points:
+          <span class="c-count count">0</span>
+        </p>
+        <p>Moves left: 5</p>
+      </section>
+  
+    </main>
+    
+  </div>
+
   <footer>
     <p>Lorem ipsum dolor sit amet. Ut dolor quos <em>Non atque et rerum accusamus eum nobis inventore</em> et voluptatem iusto. Aut autem nihil qui modi inventore qui praesentium cumque. </p>
   </footer>
