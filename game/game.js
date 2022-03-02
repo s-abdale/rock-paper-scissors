@@ -10,7 +10,10 @@ const game = () => {
     const paperBtn = document.querySelector('.paper');
     const scissorBtn = document.querySelector('.scissors');
     const playerOptions = [rockBtn,paperBtn,scissorBtn];
-    const computerOptions = ['rock','paper','scissors']
+    const computerOptions = ['rock','paper','scissors'];
+
+    // hide the restart button
+    document.querySelector('.reload').style.display = 'none';
 
 
     // 2. loop through options, apply eventListener on click
@@ -123,6 +126,7 @@ const game = () => {
     }
 
     // reload the game after game over
+    document.querySelector('.reload').style.display = 'inherit';
     reloadBtn.innerText = 'Restart';
     reloadBtn.addEventListener('click', ()=> {
       window.location.reload();
