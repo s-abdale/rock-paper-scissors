@@ -10,7 +10,7 @@ Create a game of rock paper scissors where a user plays against a computer.
 
 ### Coding challenge:
 - [X] Lvl 1: Create a basic game
-  - [-] Lvl 1.5: Create a UI for the game
+  - [X] Lvl 1.5: Create a UI for the game
 - [-] Lvl 2: Refactor code
 - [-] Lvl 3: Implement tensorflow object detection motion tracking
 - [-] Lvl 4: Implement stretch
