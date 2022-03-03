@@ -4,6 +4,12 @@ const game = () => {
   let computerScore = 0;
   let moves = 0;
 
+  // 
+  const fixedReload = document.querySelector('.header-buttons-maximize-refresh');
+  fixedReload.addEventListener('click', ()=> {
+    window.location.reload();
+  });
+
   const playGame = () => {
     // 1. declare buttons as options
     const rockBtn = document.querySelector('.rock');
@@ -39,7 +45,10 @@ const game = () => {
         winner(this.innerText,computerChoice);
 
         // state that game is ongoing
-        document.querySelector('.move').innerText = 'Keep going!';
+        // document.querySelector('.move').innerText = 'Keep going!';
+        document.querySelector('.move').innerText = 'Keep going! Keep going! Keep going! Keep going! Keep going! Keep going!';
+        document.querySelector('.marquee-trailing-span').innerText = 'Keep going! Keep going! Keep going! Keep going! Keep going! Keep going!';
+
     
         // 4. call game over after a set # of moves (external function)
         if (moves == 10){
@@ -104,6 +113,7 @@ const game = () => {
 
   const gameOver = (playerOptions, movesLeft) => {
     const chooseMove = document.querySelector('.move');
+    const marqueeText = document.querySelector('.marquee-trailing-span')
     const result = document.querySelector('.result');
     const reloadBtn = document.querySelector('.reload');
 
@@ -112,7 +122,8 @@ const game = () => {
       option.style.display = 'none';
     })
 
-    chooseMove.innerText = 'Game Over!'
+    chooseMove.innerText = 'Game Over! Game Over! Game Over! Game Over! Game Over! Game Over!'
+    marqueeText.innerText = 'Game Over! Game Over! Game Over! Game Over! Game Over! Game Over!'
     movesLeft.style.display = 'none';
     document.querySelector('.game-buttons-block').style.display = 'none';
 

@@ -23,7 +23,8 @@ body{
 header{
   background-color: #FFFFFF;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
   border-top-left-radius: 0.8rem;
   border-top-right-radius: 0.8rem;
   border-bottom: 3px solid black;
@@ -37,14 +38,14 @@ header{
   font-size: x-large;
 }
 .header-buttons{
-  position: absolute;
-  left: 0;
+  /* position: absolute; */
+  /* left: 0; */
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  margin-top: 1.2rem;
-  margin-left: 3rem;
+  /* margin-top: 1.2rem; */
+  /* margin-left: 3rem; */
   min-width: 8rem;
 }
 .header-buttons-close{
@@ -112,8 +113,9 @@ footer{
 
 .game-stage{
   background-color: #FF8CC6;
-  padding: 1rem;
-  width: -webkit-fill-available;
+  /* padding: 1rem; */
+  /* width: -webkit-fill-available; */
+  width: 49rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -152,6 +154,7 @@ footer{
 }
 
 .game-round-winner{
+  margin: 1rem;
   border: none;
   height: 10rem;
   width: 10rem;
@@ -167,17 +170,84 @@ footer{
 
 .game-round-status{
   height: 5rem;
-  width: 15rem;
-  padding: 1rem;
+  /* width: 15rem; */
+  width: -webkit-fill-available;
+  /* padding: 1rem; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
 }
 
-/* .scroll-container{
+
+.scroll-container{
+  /* width: 58.3vw; */
+  /* width: 20.6rem; */
+  width: -webkit-fill-available;
+  height: 1.5rem;
+  background-color: #2BC016;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+
+  /* overflow: hidden; */
+
+  /* position: relative; */
+}
+
+.scroll-text{
+  /* text-transform: uppercase; */
+
+  /* width: fit-content;
+  animation-name: scroll-text;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  position: relative; */
+
+  /* width: 58.3vw;
+  animation: scroll-text 5s linear infinite;
+  position: absolute;
+  overflow: hidden; */
+
+  height: 25px;
+  /* width: 420px; */
+  width: -webkit-fill-available;
+
+  overflow: hidden;
+  position: relative;
+
 
 }
-.scroll-text{
-  
+
+.scroll-text div {
+  display: block;
+  /* width: 219%; */
+  width: max-content;
+  height: 30px;
+
+  position: absolute;
+  overflow: hidden;
+
+  animation: scroll-text 5s linear infinite;
+}
+
+.scroll-text span {
+  float: left;
+  width: 50%;
+}
+
+@keyframes scroll-text {
+  /* 0%   {background-color:red; left:0px;}
+  100% {background-color:blue; left: 45.5vw;} */
+
+  /* 0%   {left:0rem;}
+  100% {left: 50rem;} */
+  0% { left: 0; }
+  100% { left: -100%; }
+}
+
+/* .marquee-leading-span{
+  background-color: #8A4FFF;
+}
+.marquee-trailing-span{
+  background-color: #FF8CC6;
 } */

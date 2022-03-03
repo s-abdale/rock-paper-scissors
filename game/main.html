@@ -27,7 +27,7 @@
         <h3>Player 1</h3>
         
         <p>Total points:
-          <span class="span-count count">0</span>
+          <span class="p-count count">0</span>
         </p>
       </section>
       
@@ -55,8 +55,19 @@
   
         <section class="game-round-status">
           <!-- note: implement scrolling text loop -->
-          <div class="scroll-container">
+          <!-- <div class="scroll-container">
             <div class="move scroll-text"></div>
+          </div> -->
+
+          <div class="scroll-container">
+            <!-- aka marquee -->
+            <div class="scroll-text">
+              <div>
+                <span class="move marquee-leading-span"></span> 
+                <!-- &nbsp; -->
+                <span class="move marquee-trailing-span"></span>
+              </div>
+            </div>
           </div>
 
           <div class="movesleft">
