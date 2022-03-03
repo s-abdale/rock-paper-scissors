@@ -45,7 +45,7 @@ const game = () => {
         winner(this.innerText,computerChoice);
 
         // state that game is ongoing        
-        document.querySelector('.move').innerHTML = '<span>Keep going! </span> <span>Keep going! </span> <span>Keep going! </span> <span>Keep going! </span> <span>Keep going! </span> <span>Keep going! </span> <span>Keep going! </span> <span>Keep going! </span> <span>Keep going! </span> <span>Keep going!</span>';
+        document.querySelector('.move').innerHTML = '<span>Keep going! </span> <span>Keep going! </span> <span>Keep going! </span> <span>Keep going! </span> <span>Keep going! </span> <span>Keep going! </span> <span>Keep going! </span> <span>Keep going! </span> <span>Keep going! </span> <span>Keep going!</span> </span> <span>Keep going!</span> </span> <span>Keep going!</span>';
     
         // 4. call game over after a set # of moves (external function)
         if (moves == 10){

@@ -23,7 +23,7 @@ body{
 header{
   background-color: #FFFFFF;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   border-top-left-radius: 0.8rem;
   border-top-right-radius: 0.8rem;
@@ -32,8 +32,9 @@ header{
 .header-title{
   background-color: whitesmoke;
   padding: 0.5rem;
+  padding-left: 1rem;
   margin: 0.5rem;
-  width: 35rem;
+  width: 80vw;
   border-radius: 3rem;
   font-family: 'Fredoka', sans-serif;
   font-weight: 700;
@@ -44,6 +45,7 @@ header{
   justify-content: space-around;
   align-items: center;
   min-width: 8rem;
+  margin-left: 1rem
 }
 .header-buttons-close{
   height: 1.7rem;
@@ -87,17 +89,31 @@ footer{
 
 
 /* ----------Players------------- */
-.player-stats {
+.player-stats{
   background-color: #FC5130;
-  padding: 1rem;
+  /* padding: 1rem; */
   width: 10rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.player-stats h3 {
+.player-stats h3{
   font-family: 'Fredoka', sans-serif;
   font-weight: 700;
   font-size: larger;
 }
+
+.player-stats-points{
+  width: -webkit-fill-available;
+  display: flex;
+  justify-content: center;
+  height: 15.9vh;
+  border-top: 3px solid black;
+}
+
 .left-player{
   border-bottom-left-radius: 0.8rem;
   border-right: 3px solid #000300;
@@ -115,7 +131,8 @@ footer{
 
 .game-stage{
   background-color: #FF8CC6;
-  width: 49rem;
+  /* width: 49rem; */
+  width: -webkit-fill-available;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -159,10 +176,10 @@ footer{
 }
 
 .game-round-winner{
-  margin: 1rem;
+  margin-top: 1rem;
   border: none;
-  height: 15rem;
-  width: 15rem;
+  height: 40vh;
+  width: 40vh;
 
   display: flex;
   justify-content: center;
@@ -170,28 +187,46 @@ footer{
 
   background-image: url("../docs/yellow_starburst.svg");
   background-repeat: no-repeat;
-  background-size: 15rem 15rem;
+  background-size: 40vh 40vh;
 
-  font-size: 1rem;
+  /* font-size: 1rem; */
+  font-size: 4vh;
+}
+.game-round-winner span{
+  background-color: #FF8CC6;
+
+  min-width: 15rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .game-round-status{
-  height: 5rem;
+  height: 15vh;
+
   width: -webkit-fill-available;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
+.movesleft{
+  margin: 1rem;
+}
 
 
 
 
 /* --------Marquee------------ */
 .scroll-container{
-  width: -webkit-fill-available;
-  height: 1.5rem;
+  /* width: -webkit-fill-available; */
+  width: 78vw;
+  /* height: 1.5rem; */
+  height: 5vh;
+  display: flex;
+  align-items: center;
   background-color: #2BC016;
   border-top: 3px solid black;
   border-bottom: 3px solid black;
@@ -207,19 +242,18 @@ footer{
   white-space: nowrap;
   position: relative;
   margin: 0 auto;
+
+  display: flex;
+  align-items: center;
 }
 
 .scroll-text div{
-  display: block;
   width: max-content;
-  height: 30px;
-  white-space: nowrap;
-
-
-  position: absolute;
   overflow: hidden;
-
   animation: scroll-text 30s linear infinite;
+
+  font-style: italic;
+  padding-right: 1rem;
 }
 
 .scroll-text div:hover{
@@ -233,9 +267,9 @@ footer{
 @keyframes scroll-text{
 
   from {
-    -moz-transform: translateX(50%);
-    -webkit-transform: translateX(50%);
-    transform: translateX(50%);
+    -moz-transform: translateX(120%);
+    -webkit-transform: translateX(120%);
+    transform: translateX(120%);
   }
   to {
     -moz-transform: translateX(-100%);
