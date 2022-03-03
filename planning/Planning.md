@@ -35,3 +35,8 @@ Create a game of rock paper scissors where a user plays against a computer.
 
 ### References:
 - https://www.geeksforgeeks.org/rock-paper-and-scissor-game-using-javascript/
+
+### Progress:
+#### LVL 1
+Stack: HTML CSS JS
+![basic-website](https://github.com/s-abdale/rock-paper-scissors/blob/dev/react-refactor/basic-app/docs/basic-game.gif)
