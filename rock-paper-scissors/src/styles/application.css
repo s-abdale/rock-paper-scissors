@@ -1,0 +1,9 @@
+body{
+  background-color: #8A4FFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0px;
+  font-family: 'Work Sans', sans-serif;
+}

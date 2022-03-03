@@ -8,9 +8,11 @@ import "../styles/application.css";
 export default function Application() {
 
   return (
-    <>
+    <body>
       <ComputerScreen/>
       <Footer/>
-    </>
+    </body>
   );
 }
+
+// ANALAGOUS TO: <body>
