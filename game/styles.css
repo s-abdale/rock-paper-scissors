@@ -185,6 +185,10 @@ footer{
 }
 
 
+
+
+
+/* --------Marquee------------ */
 .scroll-container{
   width: -webkit-fill-available;
   height: 1.5rem;
@@ -200,37 +204,42 @@ footer{
   width: -webkit-fill-available;
 
   overflow: hidden;
+  white-space: nowrap;
   position: relative;
-
-
+  margin: 0 auto;
 }
 
-.scroll-text div {
+.scroll-text div{
   display: block;
   width: max-content;
   height: 30px;
+  white-space: nowrap;
+
 
   position: absolute;
   overflow: hidden;
 
-  animation: scroll-text 5s linear infinite;
+  animation: scroll-text 30s linear infinite;
 }
 
-.scroll-text span {
-  float: left;
-  /* width: 50%; */
+.scroll-text div:hover{
+  animation-play-state: paused;
+}
+
+.scroll-text span{
   width: fit-content;
-  padding-right: 0.5rem;
 }
 
-@keyframes scroll-text {
-  0% { left: 0; }
-  100% { left: -100%; }
-}
+@keyframes scroll-text{
 
-/* .marquee-leading-span{
-  background-color: #8A4FFF;
+  from {
+    -moz-transform: translateX(50%);
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
 }
-.marquee-trailing-span{
-  background-color: #FF8CC6;
-} */

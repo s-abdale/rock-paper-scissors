@@ -44,11 +44,8 @@ const game = () => {
         // 3. check who wins (external function)
         winner(this.innerText,computerChoice);
 
-        // state that game is ongoing
-        // document.querySelector('.move').innerText = 'Keep going!';
-        document.querySelector('.move').innerText = ' going! Keep going! Keep going! Keep going! Keep going! Keep going!';
-        document.querySelector('.marquee-trailing-span').innerText = 'Keep going! Keep going! Keep going! Keep going! Keep going! Keep going!';
-
+        // state that game is ongoing        
+        document.querySelector('.move').innerHTML = '<span>Keep going! </span> <span>Keep going! </span> <span>Keep going! </span> <span>Keep going! </span> <span>Keep going! </span> <span>Keep going! </span> <span>Keep going! </span> <span>Keep going! </span> <span>Keep going! </span> <span>Keep going!</span>';
     
         // 4. call game over after a set # of moves (external function)
         if (moves == 10){
@@ -113,7 +110,6 @@ const game = () => {
 
   const gameOver = (playerOptions, movesLeft) => {
     const chooseMove = document.querySelector('.move');
-    const marqueeText = document.querySelector('.marquee-trailing-span')
     const result = document.querySelector('.result');
     const reloadBtn = document.querySelector('.reload');
 
@@ -123,7 +119,6 @@ const game = () => {
     })
 
     chooseMove.innerText = 'Game Over! Game Over! Game Over! Game Over! Game Over! Game Over!'
-    marqueeText.innerText = 'Game Over! Game Over! Game Over! Game Over! Game Over! Game Over!'
     movesLeft.style.display = 'none';
     document.querySelector('.game-buttons-block').style.display = 'none';
 
