@@ -4,7 +4,6 @@ body{
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
-  /* padding: 2rem; */
   margin: 0px;
 }
 .computer-screen{
@@ -38,14 +37,10 @@ header{
   font-size: x-large;
 }
 .header-buttons{
-  /* position: absolute; */
-  /* left: 0; */
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  /* margin-top: 1.2rem; */
-  /* margin-left: 3rem; */
   min-width: 8rem;
 }
 .header-buttons-close{
@@ -113,8 +108,6 @@ footer{
 
 .game-stage{
   background-color: #FF8CC6;
-  /* padding: 1rem; */
-  /* width: -webkit-fill-available; */
   width: 49rem;
   display: flex;
   flex-direction: column;
@@ -134,6 +127,7 @@ footer{
   border: none;
   height: 5rem;
   width: 8rem;
+  margin: 0.5rem;
 
   background-color: #FFFFFF;
   border: 3px solid black;
@@ -156,8 +150,8 @@ footer{
 .game-round-winner{
   margin: 1rem;
   border: none;
-  height: 10rem;
-  width: 10rem;
+  height: 15rem;
+  width: 15rem;
 
   display: flex;
   justify-content: center;
@@ -165,14 +159,12 @@ footer{
 
   background-image: url("../docs/yellow_starburst.svg");
   background-repeat: no-repeat;
-  background-size: 150px 150px;
+  background-size: 15rem 15rem;
 }
 
 .game-round-status{
   height: 5rem;
-  /* width: 15rem; */
   width: -webkit-fill-available;
-  /* padding: 1rem; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -181,35 +173,17 @@ footer{
 
 
 .scroll-container{
-  /* width: 58.3vw; */
-  /* width: 20.6rem; */
   width: -webkit-fill-available;
   height: 1.5rem;
   background-color: #2BC016;
   border-top: 3px solid black;
   border-bottom: 3px solid black;
-
-  /* overflow: hidden; */
-
-  /* position: relative; */
 }
 
 .scroll-text{
   /* text-transform: uppercase; */
 
-  /* width: fit-content;
-  animation-name: scroll-text;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-  position: relative; */
-
-  /* width: 58.3vw;
-  animation: scroll-text 5s linear infinite;
-  position: absolute;
-  overflow: hidden; */
-
   height: 25px;
-  /* width: 420px; */
   width: -webkit-fill-available;
 
   overflow: hidden;
@@ -220,7 +194,6 @@ footer{
 
 .scroll-text div {
   display: block;
-  /* width: 219%; */
   width: max-content;
   height: 30px;
 
@@ -236,18 +209,6 @@ footer{
 }
 
 @keyframes scroll-text {
-  /* 0%   {background-color:red; left:0px;}
-  100% {background-color:blue; left: 45.5vw;} */
-
-  /* 0%   {left:0rem;}
-  100% {left: 50rem;} */
   0% { left: 0; }
   100% { left: -100%; }
 }
-
-/* .marquee-leading-span{
-  background-color: #8A4FFF;
-}
-.marquee-trailing-span{
-  background-color: #FF8CC6;
-} */
