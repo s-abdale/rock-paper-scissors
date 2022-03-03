@@ -46,7 +46,7 @@ const game = () => {
 
         // state that game is ongoing
         // document.querySelector('.move').innerText = 'Keep going!';
-        document.querySelector('.move').innerText = 'Keep going! Keep going! Keep going! Keep going! Keep going! Keep going!';
+        document.querySelector('.move').innerText = ' going! Keep going! Keep going! Keep going! Keep going! Keep going!';
         document.querySelector('.marquee-trailing-span').innerText = 'Keep going! Keep going! Keep going! Keep going! Keep going! Keep going!';
 
     
