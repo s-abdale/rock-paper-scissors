@@ -3,7 +3,7 @@ import React from "react";
 import Buttons from "./Buttons";
 import Marquee from "./Marquee";
 
-// import "../styles/mainScreen";
+import "../styles/mainScreen.css";
 
 export default function MainScreen() {
 
